@@ -17,6 +17,8 @@
 
 这些是工程管理准备，不构成板上实验结果。分支和同步状态以 `git status`、`git branch -vv` 及 GitHub 实际记录为准。
 
+同日排查普通 PowerShell 使用问题：系统终端 PATH 未包含 Git；直连 GitHub 出现 443 连接超时。已确认 Git 可用路径，并为当前仓库配置本机 GitHub 代理，再次执行推送预演成功。终端路径与代理使用条件见 [协作指南](collaboration.md)。
+
 ## 尚未验证
 
 - PYNQ 镜像能否在当前板卡启动，Jupyter 是否可访问。

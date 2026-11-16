@@ -4,6 +4,10 @@
 
 当前电脑继续使用 `D:\XIAO\P047Pro`。该目录接入已有 GitHub 仓库，原学习路线文件保留。
 
+Windows 普通 PowerShell 的 PATH 需包含 Git 所在目录；Codex 环境能执行 Git 不代表其他终端也能找到它。本机使用 Codex 自带的 Git，临时添加到 PATH 的设置只对当前终端有效。
+
+本机直连 GitHub 曾出现 443 连接超时，已在当前仓库的本地 Git 配置中设置 GitHub 专用代理 `http://127.0.0.1:7897`，并通过不带临时参数的 `git push --dry-run origin dev/xiao` 验证。该设置不写入版本控制，也不影响其他仓库。使用时保持本机代理客户端开启；换电脑或代理端口变化时，按实际环境调整。若以后可直接连接 GitHub，可用 `git config --local --unset http.https://github.com.proxy` 移除本项配置。
+
 2026-11-16 已通过 Git Credential Manager 完成 `tito-xiao` 的本机命令行登录，并验证 `dev/xiao` 上的 `git push` 成功。日常可以直接使用 Git 命令提交和推送；若以后凭据失效，再按 Git Credential Manager 提示重新登录。不要把账号密码或令牌写进仓库、命令示例或文档。
 
 - `main` 是共同基线；只有完成对应检查的修改才合入。
