@@ -13,7 +13,7 @@
 - 已编写项目入口、复现指南、双人协作约定和实验记录模板。
 - 已准备提交文件过滤规则、PR 模板和任务模板。
 
-本机 Git 命令行读取公开仓库已验证；命令行推送因缺少登录凭据失败。本次通过已授权的 GitHub 连接发布，后续在个人终端完成首次推送登录，参见 [协作指南](collaboration.md)。
+2026-11-16 已通过 Git Credential Manager 完成 `tito-xiao` 的本机命令行登录。登录命令正常退出，随后在 `dev/xiao` 执行 `git push` 成功，返回 `Everything up-to-date`；验证时工作区干净，本地分支与远程同步。日常操作参见 [协作指南](collaboration.md)。
 
 这些是工程管理准备，不构成板上实验结果。分支和同步状态以 `git status`、`git branch -vv` 及 GitHub 实际记录为准。
 

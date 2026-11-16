@@ -4,7 +4,7 @@
 
 当前电脑继续使用 `D:\XIAO\P047Pro`。该目录接入已有 GitHub 仓库，原学习路线文件保留。
 
-2026-11-16 准备时，本机命令行可读取公开仓库，但尚无可用的 GitHub 推送凭据；本次远程同步使用已授权的 GitHub 连接完成。在自己的终端首次执行 `git push` 时，按 Git Credential Manager 提示登录 `tito-xiao`。不要把账号密码或令牌写进仓库、命令示例或文档；若浏览器授权尚未完成，命令行推送仍可能失败。
+2026-11-16 已通过 Git Credential Manager 完成 `tito-xiao` 的本机命令行登录，并验证 `dev/xiao` 上的 `git push` 成功。日常可以直接使用 Git 命令提交和推送；若以后凭据失效，再按 Git Credential Manager 提示重新登录。不要把账号密码或令牌写进仓库、命令示例或文档。
 
 - `main` 是共同基线；只有完成对应检查的修改才合入。
 - `dev/xiao` 是 xiao 的工作分支。
